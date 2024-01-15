@@ -9,24 +9,26 @@ export const metadata = {
     description: "Discover & share AI promts"
 }
 
-const RootLayout = ({children}) => {
-  return (
-    <html lang='en'>
-        <body>
-            <div className='main'>
-                <div className="gradient">
+const RootLayout = ({ children }) => {
+    return (
+        <html lang='en'>
+            <body>
+                <Provider>
+                    <div className='main'>
+                        <div className="gradient">
 
-                </div>
+                        </div>
 
-            </div>
-            <main className='app'>
-                <Nav/>
-                {children}
-            </main>
-        </body>
+                    </div>
+                    <main className='app'>
+                        <Nav />
+                        {children}
+                    </main>
+                </Provider>
+            </body>
 
-    </html>
-  )
+        </html>
+    )
 }
 
 export default RootLayout
