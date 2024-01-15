@@ -1,5 +1,9 @@
 import "@/styles/globals.css"
 
+import Nav from "@/components/Nav"
+import Provider from "@/components/Provider"
+
+
 export const metadata = {
     title: "Promtdunia",
     description: "Discover & share AI promts"
