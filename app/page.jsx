@@ -1,24 +1,19 @@
-import Feed from '@/components/Feed'
+import Feed from "@/components/Feed";
 
-const Home = () => {
-  return (
-    <section className="w-full flex-center flex-col">
-      <h1 className="head_text text-center">
-        Discover & Share
-        <br  className="max-md:hidden"/>
-        <span className="orange_gradient text-center"> AI-Powered Promts</span>
-      </h1>
+const Home = () => (
+  <section className='w-full flex-center flex-col'>
+    <h1 className='head_text text-center'>
+      Discover & Share
+      <br className='max-md:hidden' />
+      <span className='orange_gradient text-center'> AI-Powered Prompts</span>
+    </h1>
+    <p className='desc text-center'>
+      Promptopia is an open-source AI prompting tool for modern world to
+      discover, create and share creative prompts
+    </p>
 
-      <p className="desc text-center">
-        Promtdunia is an open-source AI 
-        promting tool for mopdern world to discover,
-         create and sharecreative promts-
-      </p>
+    <Feed />
+  </section>
+);
 
-      <Feed/>
-
-    </section>
-  )
-}
-
-export default Home
+export default Home;
